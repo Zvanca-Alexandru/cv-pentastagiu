@@ -1,0 +1,55 @@
+header {
+    text-align: center;
+}
+header h4{
+    font-style: italic;
+}
+div {
+    position: relative;
+}
+div {
+    max-width: 80%;
+    box-sizing: border-box;
+    border-style: dashed;
+    border: 5px solid #0000000;
+    margin: 0 auto;
+    padding: 20px;
+}
+div h4{
+    position: absolute;
+    margin-top: -35px;
+    background-color: #fff;
+    border: 5px solid #fff;
+}
+.experience {
+    top: 30px;
+    max-width: 80%;
+    box-sizing: border-box;
+    border-style: dashed;
+    margin: 0 auto;
+    padding: 20px;
+}
+.experience h4{
+    position: absolute;
+    margin-top: -35px;
+    background-color: #fff;
+    border: 5px solid #fff;
+}
+.skills {
+    top: 30px;
+    max-width: 80%;
+    box-sizing: border-box;
+    border-style: dashed;
+    margin: 0 auto;
+    padding: 20px;
+}
+.skills h4{
+    position: absolute;
+    margin-top: -35px;
+    background-color: #fff;
+    border: 5px solid #fff;
+}
+.first .second {
+    display: inline-block;
+    width: 50%;
+}
