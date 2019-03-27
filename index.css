@@ -1,25 +1,43 @@
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
 header {
     text-align: center;
 }
 header h4{
     font-style: italic;
 }
-div {
+header:hover {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: white;
+    background-color: black
+}
+section {
     position: relative;
 }
-div {
-    max-width: 80%;
+section {
     box-sizing: border-box;
     border-style: dashed;
     border: 5px solid #0000000;
-    margin: 0 auto;
     padding: 20px;
 }
-div h4{
+section h4{
     position: absolute;
     margin-top: -35px;
     background-color: #fff;
     border: 5px solid #fff;
+}
+.about {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.about:hover {
+    color: blue;
+    cursor: pointer;
+    font-style: italic;
+    border-style: groove;
 }
 .experience {
     top: 30px;
@@ -35,13 +53,44 @@ div h4{
     background-color: #fff;
     border: 5px solid #fff;
 }
+.experience div {
+    display: inline-block;
+    border-style: none;
+}
+.experience .first,
+.experience .second {
+    border-style: none;
+    padding: 0;
+}
+.first p,
+.second p {
+    max-width: 50%;
+    display: inline-block;
+    float: right;
+    margin-top: 0;
+}
+h5 {
+    margin: 0;
+}
+.first div p,
+.second div p {
+    display: contents;
+}
+.experience:hover {
+    color:red;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: bold;
+    border-style: none;
+}
 .skills {
-    top: 30px;
+    top: 60px;
     max-width: 80%;
     box-sizing: border-box;
     border-style: dashed;
     margin: 0 auto;
     padding: 20px;
+    margin-bottom: 5%;
 }
 .skills h4{
     position: absolute;
@@ -49,7 +98,35 @@ div h4{
     background-color: #fff;
     border: 5px solid #fff;
 }
-.first .second {
+.examples{
+    margin: 0 auto;
+}
+.examples div {
     display: inline-block;
-    width: 50%;
+    width: 19%;
+    max-height: 50%;
+}
+.avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 5%;
+    display: inline-block;
+}
+.examples div p {
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 5px;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
