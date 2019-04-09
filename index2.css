@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box; 
+    font-family: 'Crete Round', serif;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+}
+
+header h3 {
+    display:flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+.about,
+.experience,
+.skills {
+    display: flex;
+    width: 80%;
+    border-style: dashed;
+    margin: 3% 0;
+    padding: 10px;
+}
+
+.about h3,
+.experience h3,
+.skills h3 {
+    position: absolute;
+    padding: 5px;
+    background-color: rgb(154, 241, 200);
+    margin-top:-30px;
+}
+
+.experience{
+    flex-flow: column wrap;
+}
+
+.first,
+.second {
+    display: flex;
+}
+
+.examples,
+.tooltip {
+    display: flex;
+}
+
+.first > *,
+.second > * {
+    flex: 1 50%;
+}
+
+.examples {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;   
+    width:100%;
+}
+
+.tooltip {
+    flex: 1 20%;
+    align-items: center;
+}
+
+.tooltip p {
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #000;
+}
+#tooltip {
+    background-color: lightgreen;
+    display: none;
+    position: absolute;
+    width: auto;
+    padding: 5px;
+    font-style: italic;
+}
+  
+.tooltip:hover #tooltip {
+    display: block;
+}

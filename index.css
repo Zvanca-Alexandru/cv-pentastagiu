@@ -100,10 +100,11 @@ h5 {
 }
 .examples{
     margin: 0 auto;
+    width: 100%;
 }
 .examples div {
     display: inline-block;
-    width: 19%;
+    width: 20%;
     max-height: 50%;
 }
 .avatar {
